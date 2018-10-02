@@ -46,6 +46,6 @@ def centraldiff_2ndDer (f,a,b,N)
     h = (b-a)/N
     g=[]
     for k in range(0,N):
-        slop = (f(a+(k+1)*h)+f(a+(k-1)*h)-2f(a+k*h)/(h**2)
+        slop = (f(a+(k+1)*h)+f(a+(k-1)*h)-2*f(a+k*h)/(h**2)
         g.append(slop)
     return array(g)
